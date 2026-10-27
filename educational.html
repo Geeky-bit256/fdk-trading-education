@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore FDK's educational library and learn about financial markets, risk awareness, and trading psychology.">
+
+  <title>Education Library | FDK</title>
+
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="FDK home">
+      <span class="logo-mark">FDK</span>
+      <span class="logo-subtitle">Financial Discipline & Knowledge</span>
+    </a>
+
+    <button class="menu-toggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="main-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-navigation" id="main-navigation">
+      <a href="index.html">Home</a>
+      <a href="education.html" aria-current="page">Education</a>
+      <a href="learning-paths.html">Learning Paths</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="library-hero">
+      <p class="eyebrow">FDK EDUCATION</p>
+      <h1>Explore. Understand. <span>Keep Learning.</span></h1>
+      <p>
+        Browse educational articles, explore different topics,
+        and build your understanding one concept at a time.
+      </p>
+
+      <label class="search-label" for="article-search">
+        Find an article
+      </label>
+
+      <input
+        class="article-search"
+        type="search"
+        id="article-search"
+        placeholder="Search topics or keywords..."
+      >
+    </section>
+
+    <section class="library-content">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE LIBRARY</p>
+          <h2>Browse educational topics</h2>
+        </div>
+        <p class="results-count" id="results-count">
+          6 articles
+        </p>
+      </div>
+
+      <div class="filter-list" aria-label="Filter articles">
+        <button class="filter-button active" data-category="all">
+          All topics
+        </button>
+        <button class="filter-button" data-category="fundamentals">
+          Fundamentals
+        </button>
+        <button class="filter-button" data-category="risk">
+          Risk awareness
+        </button>
+        <button class="filter-button" data-category="psychology">
+          Psychology
+        </button>
+        <button class="filter-button" data-category="discipline">
+          Discipline
+        </button>
+      </div>
+
+      <div class="article-grid" id="article-grid">
+        <article class="library-card"
+          data-category="fundamentals"
+          data-search="understanding financial markets beginner fundamentals">
+          <span class="article-category">FUNDAMENTALS</span>
+          <h3>Understanding Financial Markets</h3>
+          <p>
+            An introduction to financial markets and the basic
+            concepts beginners should understand.
+          </p>
+          <div class="article-meta">
+            <span>Beginner</span>
+            <span>5 min read</span>
+          </div>
+          <a href="article.html">Read article &rarr;</a>
+        </article>
+
+        <article class="library-card"
+          data-category="risk"
+          data-search="understanding risk uncertainty financial decisions">
+          <span class="article-category">RISK AWARENESS</span>
+          <h3>Understanding Risk</h3>
+          <p>
+            Learn why uncertainty is part of financial markets
+            and why every decision has potential consequences.
+          </p>
+          <div class="article-meta">
+            <span>Beginner</span>
+            <span>4 min read</span>
+          </div>
+          <a href="article.html">Read article &rarr;</a>
+        </article>
+
+        <article class="library-card"
+          data-category="psychology"
+          data-search="emotions decision making psychology fear greed">
+          <span class="article-category">PSYCHOLOGY</span>
+          <h3>Emotions and Decision-Making</h3>
+          <p>
+            Explore how fear, excitement, and frustration
+            can influence the choices people make.
+          </p>
+          <div class="article-meta">
+            <span>Beginner</span>
+            <span>6 min read</span>
+          </div>
+          <a href="article.html">Read article &rarr;</a>
+        </article>
+
+        <article class="library-card"
+          data-category="discipline"
+          data-search="building discipline habits consistency">
+          <span class="article-category">DISCIPLINE</span>
+          <h3>Building Consistent Habits</h3>
+          <p>
+            Understand how routines and repeatable processes
+            can help people make more deliberate decisions.
+          </p>
+          <div class="article-meta">
+            <span>Beginner</span>
+            <span>5 min read</span>
+          </div>
+          <a href="article.html">Read article &rarr;</a>
+        </article>
+
+        <article class="library-card"
+          data-category="risk"
+          data-search="risk management planning losses uncertainty">
+          <span class="article-category">RISK AWARENESS</span>
+          <h3>The Importance of Planning</h3>
+          <p>
+            Discover how planning ahead can help you understand
+            possible outcomes before making a decision.
+          </p>
+          <div class="article-meta">
+            <span>Beginner</span>
+            <span>4 min read</span>
+          </div>
+          <a href="article.html">Read article &rarr;</a>
+        </article>
+
+        <article class="library-card"
+          data-category="fundamentals"
+          data-search="learning process research critical thinking">
+          <span class="article-category">FUNDAMENTALS</span>
+          <h3>Learning Through Research</h3>
+          <p>
+            Learn to ask better questions, examine information,
+            and develop your understanding step by step.
+          </p>
+          <div class="article-meta">
+            <span>Beginner</span>
+            <span>3 min read</span>
+          </div>
+          <a href="article.html">Read article &rarr;</a>
+        </article>
+      </div>
+
+      <p class="empty-results" id="empty-results" hidden>
+        No articles match your search. Try another keyword or topic.
+      </p>
+    </section>
+
+    <section class="closing-section">
+      <p class="eyebrow">YOUR NEXT STEP</p>
+      <h2>Not sure where to begin?</h2>
+      <p>Explore a structured collection of learning topics.</p>
+      <a class="button button-primary" href="learning-paths.html">
+        Explore Learning Paths
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-logo" href="index.html">FDK</a>
+    <p>An independent educational website.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+
+    <p class="copyright">
+      &copy; 2026 FDK. Educational content only.
+    </p>
+  </footer>
+</body>
+</html>
