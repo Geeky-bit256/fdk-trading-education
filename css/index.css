@@ -252,6 +252,9 @@ h1 span {
   color: var(--muted);
 }
 
+
+
+
 .topics-section {
   max-width: var(--container);
   margin: 0 auto;
@@ -308,16 +311,7 @@ h1 span {
   font-size: 0.9rem;
 }
 
-.closing-section {
-  padding: 80px 24px;
-  border-top: 1px solid var(--border);
-  background: var(--surface);
-  text-align: center;
-}
 
-.closing-section .button {
-  margin-top: 16px;
-}
 
 .site-footer {
   padding: 40px 24px 24px;
