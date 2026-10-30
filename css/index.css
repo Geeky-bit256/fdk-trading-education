@@ -2061,3 +2061,133 @@ h1 span {
     padding: 17px;
   }
 }
+
+
+
+
+
+/* ========================================
+   PERSONAL JOURNAL EXAMPLES
+======================================== */
+
+.journaling-trade-example {
+  margin: 2.5rem 0;
+  padding: 1.75rem;
+  background: var(--card-bg, #171b24);
+  border: 1px solid var(--border-color, #2b303b);
+  border-radius: 12px;
+}
+
+.journaling-trade-example h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.journaling-trade-example h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-color, #b6a0ff);
+}
+
+.journaling-trade-example p {
+  margin-bottom: 0;
+  line-height: 1.8;
+  color: var(--text-secondary, #b0b5c0);
+}
+
+/* Trade screenshots */
+
+.journaling-trade-example .article-image {
+  margin: 1.5rem 0 2rem;
+}
+
+.journaling-trade-example .article-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  object-fit: contain;
+  background: #10131a;
+  border: 1px solid var(--border-color, #2b303b);
+  border-radius: 8px;
+}
+
+.journaling-trade-example .article-image figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-secondary, #9299a6);
+}
+
+/* Personal trading process */
+
+#my-process .article-list {
+  margin-top: 1.25rem;
+}
+
+#my-process .article-list li {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* Important information */
+
+#important-information .article-callout {
+  margin-top: 1.5rem;
+}
+
+#important-information .article-callout p,
+.article-disclaimer p {
+  line-height: 1.8;
+}
+
+#important-information .article-callout p + p {
+  margin-top: 1rem;
+}
+
+/* Final reflection */
+
+#final-reflection p {
+  line-height: 1.8;
+}
+
+/* Sidebar */
+
+.article-sidebar .sidebar-card {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive layout */
+
+@media (max-width: 768px) {
+  .journaling-trade-example {
+    padding: 1.25rem;
+    margin: 2rem 0;
+  }
+
+  .journaling-trade-example h3 {
+    font-size: 1.2rem;
+  }
+
+  .journaling-trade-example h4 {
+    margin-top: 1.5rem;
+  }
+
+  .journaling-trade-example .article-image img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .journaling-trade-example {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .journaling-trade-example .article-image img {
+    max-height: 320px;
+  }
+}
