@@ -1205,3 +1205,762 @@ h1 span {
     padding: 15px;
   }
 }
+
+
+
+
+
+
+/* Journaling: Purpose Section */
+
+.journaling-purpose {
+  margin: 48px 0;
+}
+
+.journaling-purpose .eyebrow {
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+
+.journaling-purpose h2 {
+  max-width: 650px;
+  color: #f3f4f6;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin: 0 0 20px;
+}
+
+.journaling-purpose > p:not(.eyebrow) {
+  max-width: 760px;
+  color: #aeb8c7;
+  font-size: 0.96rem;
+  line-height: 1.8;
+  margin: 0 0 16px;
+}
+
+.journaling-purpose .journaling-purpose-intro {
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+/* Purpose Cards */
+
+.journaling-purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.journaling-purpose-card {
+  padding: 22px;
+  background: #111827;
+  border: 1px solid #293548;
+  border-radius: 12px;
+}
+
+.journaling-purpose-card h3 {
+  color: #f3f4f6;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.journaling-purpose-card p {
+  color: #aeb8c7;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 700px) {
+  .journaling-purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .journaling-purpose-card {
+    padding: 18px;
+  }
+}
+
+
+
+
+/* Journaling: What to Record */
+
+.journaling-record {
+  margin: 56px 0;
+}
+
+.journaling-record .eyebrow {
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+
+.journaling-record h2 {
+  color: #f3f4f6;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin: 0 0 18px;
+}
+
+.journaling-record-intro {
+  max-width: 740px;
+  color: #aeb8c7;
+  font-size: 0.96rem;
+  line-height: 1.8;
+  margin: 0 0 30px;
+}
+
+.journaling-record-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.journaling-record-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px;
+  background: #111827;
+  border: 1px solid #293548;
+  border-radius: 12px;
+}
+
+.journaling-record-number {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  color: #93c5fd;
+  background: #1e293b;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.journaling-record-item h3 {
+  color: #f3f4f6;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 2px 0 10px;
+}
+
+.journaling-record-item p {
+  color: #aeb8c7;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Reminder */
+
+.journaling-record-note {
+  margin-top: 24px;
+  padding: 20px;
+  background: #172538;
+  border: 1px solid #294565;
+  border-left: 3px solid #60a5fa;
+  border-radius: 8px;
+}
+
+.journaling-record-note h3 {
+  color: #93c5fd;
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.journaling-record-note p {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 700px) {
+  .journaling-record-list {
+    grid-template-columns: 1fr;
+  }
+
+  .journaling-record-item {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .journaling-record-note {
+    padding: 17px;
+  }
+}
+
+
+
+
+/* Journaling: Trade Review */
+
+.journaling-review {
+  margin: 56px 0;
+}
+
+.journaling-review .eyebrow {
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+
+.journaling-review h2 {
+  color: #f3f4f6;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin: 0 0 18px;
+}
+
+.journaling-review-intro {
+  max-width: 740px;
+  color: #aeb8c7;
+  font-size: 0.96rem;
+  line-height: 1.8;
+  margin: 0 0 30px;
+}
+
+/* Review Cards */
+
+.journaling-review-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.journaling-review-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  background: #111827;
+  border: 1px solid #293548;
+  border-radius: 12px;
+}
+
+.journaling-review-label {
+  color: #60a5fa;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 18px;
+}
+
+.journaling-review-card h3 {
+  color: #f3f4f6;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  margin: 0 0 12px;
+}
+
+.journaling-review-card > p {
+  color: #aeb8c7;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin: 0 0 22px;
+}
+
+/* Example inside each card */
+
+.journaling-review-example {
+  margin-top: auto;
+  padding: 15px;
+  background: #172538;
+  border: 1px solid #293f59;
+  border-radius: 8px;
+}
+
+.journaling-review-example > span {
+  display: block;
+  color: #93c5fd;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.journaling-review-example p {
+  color: #cbd5e1;
+  font-size: 0.86rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Review Reminder */
+
+.journaling-review-reminder {
+  margin-top: 24px;
+  padding: 20px;
+  background: #191a2b;
+  border: 1px solid #373552;
+  border-left: 3px solid #a78bfa;
+  border-radius: 8px;
+}
+
+.journaling-review-reminder h3 {
+  color: #c4b5fd;
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.journaling-review-reminder p {
+  color: #d1d5db;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 800px) {
+  .journaling-review-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .journaling-review-card {
+    padding: 20px;
+  }
+}
+
+
+
+
+/* Journaling: Practical Example */
+
+.journaling-example {
+  margin: 56px 0;
+}
+
+.journaling-example .eyebrow {
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+
+.journaling-example h2 {
+  color: #f3f4f6;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin: 0 0 18px;
+}
+
+.journaling-example-intro {
+  max-width: 740px;
+  color: #aeb8c7;
+  font-size: 0.96rem;
+  line-height: 1.8;
+  margin: 0 0 30px;
+}
+
+/* Example Cards */
+
+.journaling-example-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.journaling-example-card {
+  padding: 22px;
+  background: #111827;
+  border: 1px solid #293548;
+  border-radius: 12px;
+}
+
+.journaling-example-label {
+  display: inline-block;
+  color: #93c5fd;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.journaling-example-card h3 {
+  color: #f3f4f6;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  margin: 0 0 20px;
+}
+
+.journaling-example-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #172538;
+  border: 1px solid #293f59;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.journaling-example-result span {
+  color: #aeb8c7;
+  font-size: 0.85rem;
+}
+
+.journaling-example-result strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.journaling-loss {
+  color: #fca5a5;
+}
+
+.journaling-example-card h4 {
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  margin: 20px 0 8px;
+}
+
+.journaling-example-card > p {
+  color: #aeb8c7;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Lesson Callout */
+
+.journaling-example-lesson {
+  margin-top: 24px;
+  padding: 17px;
+  background: #172538;
+  border: 1px solid #294565;
+  border-left: 3px solid #60a5fa;
+  border-radius: 8px;
+}
+
+.journaling-example-lesson h4 {
+  color: #93c5fd;
+  margin: 0 0 8px;
+}
+
+.journaling-example-lesson p {
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Comparison Reminder */
+
+.journaling-example-reminder {
+  margin-top: 24px;
+  padding: 20px;
+  background: #191a2b;
+  border: 1px solid #373552;
+  border-left: 3px solid #a78bfa;
+  border-radius: 8px;
+}
+
+.journaling-example-reminder h3 {
+  color: #c4b5fd;
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.journaling-example-reminder p {
+  color: #d1d5db;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 700px) {
+  .journaling-example-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journaling-example-card {
+    padding: 18px;
+  }
+
+  .journaling-example-reminder {
+    padding: 17px;
+  }
+}
+
+
+
+/* Journaling: Patterns Over Time */
+
+.journaling-patterns {
+  margin: 56px 0;
+}
+
+.journaling-patterns .eyebrow {
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+
+.journaling-patterns h2 {
+  color: #f3f4f6;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin: 0 0 18px;
+}
+
+.journaling-patterns-intro {
+  max-width: 740px;
+  color: #aeb8c7;
+  font-size: 0.96rem;
+  line-height: 1.8;
+  margin: 0 0 30px;
+}
+
+/* Pattern Cards */
+
+.journaling-patterns-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.journaling-pattern-card {
+  padding: 22px;
+  background: #111827;
+  border: 1px solid #293548;
+  border-radius: 12px;
+}
+
+.journaling-pattern-card h3 {
+  color: #f3f4f6;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.journaling-pattern-card p {
+  color: #aeb8c7;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Worked Example */
+
+.journaling-pattern-example {
+  margin-top: 24px;
+  padding: 22px;
+  background: #172538;
+  border: 1px solid #294565;
+  border-left: 3px solid #60a5fa;
+  border-radius: 10px;
+}
+
+.journaling-pattern-example .eyebrow {
+  margin-bottom: 12px;
+}
+
+.journaling-pattern-example h3 {
+  color: #f3f4f6;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+.journaling-pattern-example p:not(.eyebrow) {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin: 0 0 14px;
+}
+
+.journaling-pattern-example p:last-child {
+  margin-bottom: 0;
+}
+
+/* Reminder */
+
+.journaling-pattern-reminder {
+  margin-top: 24px;
+  padding: 20px;
+  background: #191a2b;
+  border: 1px solid #373552;
+  border-left: 3px solid #a78bfa;
+  border-radius: 8px;
+}
+
+.journaling-pattern-reminder h3 {
+  color: #c4b5fd;
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.journaling-pattern-reminder p {
+  color: #d1d5db;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 700px) {
+  .journaling-patterns-list {
+    grid-template-columns: 1fr;
+  }
+
+  .journaling-pattern-card {
+    padding: 18px;
+  }
+
+  .journaling-pattern-example {
+    padding: 18px;
+  }
+
+  .journaling-pattern-reminder {
+    padding: 17px;
+  }
+}
+
+
+/* Journaling: Common Mistakes */
+.journaling-mistakes {
+  margin: 56px 0;
+}
+
+.journaling-mistakes .eyebrow {
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+
+.journaling-mistakes h2 {
+  color: #f3f4f6;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin: 0 0 18px;
+}
+
+.journaling-mistakes-intro {
+  max-width: 740px;
+  color: #aeb8c7;
+  font-size: 0.96rem;
+  line-height: 1.8;
+  margin: 0 0 30px;
+}
+
+.journaling-mistakes-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.journaling-mistake-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px;
+  background: #111827;
+  border: 1px solid #293548;
+  border-radius: 12px;
+}
+
+.journaling-mistake-number {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  color: #93c5fd;
+  background: #1e293b;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.journaling-mistake-card h3 {
+  color: #f3f4f6;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 2px 0 10px;
+}
+
+.journaling-mistake-card p {
+  color: #aeb8c7;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin: 0 0 12px;
+}
+
+.journaling-mistake-card .journaling-mistake-fix {
+  color: #cbd5e1;
+  margin-bottom: 0;
+}
+
+.journaling-mistake-fix strong {
+  color: #93c5fd;
+}
+
+.journaling-mistakes-reminder {
+  margin-top: 24px;
+  padding: 20px;
+  background: #172538;
+  border: 1px solid #294565;
+  border-left: 3px solid #60a5fa;
+  border-radius: 10px;
+}
+
+.journaling-mistakes-reminder h3 {
+  color: #93c5fd;
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.journaling-mistakes-reminder p {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .journaling-mistakes-list {
+    grid-template-columns: 1fr;
+  }
+
+  .journaling-mistake-card {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .journaling-mistakes-reminder {
+    padding: 17px;
+  }
+}
