@@ -750,56 +750,182 @@ h1 span {
 
 
 
-/* ABOUT PAGE */
-
-.about-hero {
-  padding: 90px 0 80px;
-  border-bottom: 1px solid var(--border-color);
+/* About Page */
+.about-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
 }
 
-.about-hero .container {
-  max-width: 850px;
+.about-hero {
+  max-width: 820px;
+  padding: 52px 0 64px;
+}
+
+.about-page .eyebrow {
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 14px;
 }
 
 .about-hero h1 {
-  max-width: 750px;
-  margin: 16px 0;
-  font-size: clamp(2.3rem, 6vw, 4rem);
-  line-height: 1.12;
+  max-width: 760px;
+  color: #f3f4f6;
+  font-size: clamp(2.1rem, 5vw, 3.5rem);
+  line-height: 1.15;
   letter-spacing: -0.04em;
+  margin: 0 0 22px;
 }
 
-.about-hero p:not(.eyebrow) {
-  max-width: 680px;
-  color: var(--text-muted);
+.about-hero-intro {
+  max-width: 700px;
+  color: #aeb8c7;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin: 0;
+}
+
+.about-purpose,
+.about-walter,
+.about-approach,
+.about-responsibility {
+  margin: 0 0 64px;
+}
+
+.about-section-heading {
+  max-width: 700px;
+  margin-bottom: 24px;
+}
+
+.about-section-heading h2,
+.about-responsibility h2 {
+  color: #f3f4f6;
+  font-size: clamp(1.6rem, 4vw, 2.25rem);
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.about-purpose-content,
+.about-walter-content {
+  max-width: 790px;
+}
+
+.about-purpose-content p,
+.about-walter-content p,
+.about-responsibility > p:not(.eyebrow) {
+  color: #aeb8c7;
+  font-size: 0.96rem;
+  line-height: 1.9;
+  margin: 0 0 18px;
+}
+
+.about-walter-note {
+  max-width: 790px;
+  margin: 32px 0 0;
+  padding: 24px;
+  background: #111827;
+  border: 1px solid #293548;
+  border-left: 3px solid #60a5fa;
+  border-radius: 10px;
+}
+
+.about-walter-note p {
+  color: #e5e7eb;
   font-size: 1.05rem;
   line-height: 1.8;
+  margin: 0 0 16px;
 }
 
-.about-section {
+.about-walter-note footer {
+  color: #93c5fd;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.about-approach-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
-.about-content h2,
-.audience-inner h2 {
-  margin: 12px 0 20px;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  line-height: 1.2;
+.about-approach-card {
+  padding: 24px;
+  background: #111827;
+  border: 1px solid #293548;
+  border-radius: 12px;
 }
 
-.about-content > p:not(.eyebrow),
-.audience-inner > p:not(.eyebrow) {
-  color: var(--text-muted);
+.about-approach-number {
+  display: inline-block;
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 18px;
+}
+
+.about-approach-card h3 {
+  color: #f3f4f6;
+  font-size: 1.05rem;
+  margin: 0 0 12px;
+}
+
+.about-approach-card p {
+  color: #aeb8c7;
+  font-size: 0.9rem;
   line-height: 1.8;
+  margin: 0;
 }
 
-.about-content > p + p {
-  margin-top: 16px;
+.about-responsibility {
+  padding: 28px;
+  background: #172538;
+  border: 1px solid #294565;
+  border-radius: 12px;
 }
+
+.about-responsibility h2 {
+  margin-bottom: 22px;
+}
+
+.about-responsibility > p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .about-page {
+    padding: 24px 18px 48px;
+  }
+
+  .about-hero {
+    padding: 36px 0 48px;
+  }
+
+  .about-purpose,
+  .about-walter,
+  .about-approach,
+  .about-responsibility {
+    margin-bottom: 48px;
+  }
+
+  .about-approach-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .about-approach-card {
+    padding: 20px;
+  }
+
+  .about-walter-note,
+  .about-responsibility {
+    padding: 20px;
+  }
+}
+
 
 .about-principles {
   display: flex;
@@ -816,146 +942,117 @@ h1 span {
   background: var(--surface-color);
 }
 
-.principle-number {
-  display: grid;
-  place-items: center;
-  flex-shrink: 0;
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  background: var(--accent-soft);
-  color: var(--accent-color);
-  font-weight: 700;
+/* Disclaimer Page */
+.disclaimer-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
 }
-
-.principle-card h3 {
-  margin-bottom: 8px;
-}
-
-.principle-card p {
-  color: var(--text-muted);
-  line-height: 1.65;
-  font-size: 0.95rem;
-}
-
-.about-audience {
-  padding: 72px 0;
-  border-top: 1px solid var(--border-color);
-  background: var(--surface-color);
-}
-
-.audience-inner {
-  max-width: 760px;
-  text-align: center;
-}
-
-.audience-inner > p:not(.eyebrow) {
-  margin: 0 auto 28px;
-  max-width: 650px;
-}
-
-@media (max-width: 700px) {
-  .about-hero {
-    padding: 64px 0 56px;
-  }
-
-  .about-section {
-    grid-template-columns: 1fr;
-    gap: 36px;
-    padding-top: 56px;
-    padding-bottom: 56px;
-  }
-
-  .about-audience {
-    padding: 56px 0;
-  }
-}
-
-
-/* DISCLAIMER PAGE */
 
 .disclaimer-hero {
-  padding: 72px 0 56px;
-  border-bottom: 1px solid var(--border-color);
+  padding: 44px 0 48px;
+  border-bottom: 1px solid #293548;
+  margin-bottom: 42px;
 }
 
-.disclaimer-hero .container {
-  max-width: 850px;
+.disclaimer-page .eyebrow {
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 14px;
 }
 
 .disclaimer-hero h1 {
-  margin: 14px 0;
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-  line-height: 1.15;
-  letter-spacing: -0.035em;
+  color: #f3f4f6;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  margin: 0 0 20px;
 }
 
-.disclaimer-hero p:not(.eyebrow) {
-  color: var(--text-muted);
-  line-height: 1.7;
+.disclaimer-hero-intro {
+  max-width: 720px;
+  color: #aeb8c7;
+  font-size: 1rem;
+  line-height: 1.85;
+  margin: 0;
 }
 
 .disclaimer-section {
-  padding-top: 56px;
-  padding-bottom: 80px;
+  padding: 0 0 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #293548;
 }
 
-.disclaimer-content {
-  max-width: 820px;
-  margin: 0 auto;
+.disclaimer-section h2 {
+  color: #f3f4f6;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 0 16px;
 }
 
-.disclaimer-block {
-  padding: 28px 0;
-  border-bottom: 1px solid var(--border-color);
+.disclaimer-section p {
+  color: #aeb8c7;
+  font-size: 0.94rem;
+  line-height: 1.9;
+  margin: 0 0 16px;
 }
 
-.disclaimer-block:first-child {
-  padding-top: 0;
+.disclaimer-section p:last-child {
+  margin-bottom: 0;
 }
 
-.disclaimer-block h2 {
-  margin-bottom: 14px;
-  font-size: 1.25rem;
-}
-
-.disclaimer-block p {
-  color: var(--text-muted);
-  line-height: 1.85;
-}
-
-.disclaimer-block p + p {
-  margin-top: 12px;
-}
-
-.disclaimer-notice {
-  margin-top: 32px;
-  padding: 22px;
-  border: 1px solid var(--border-color);
-  border-left: 3px solid var(--accent-color);
+.disclaimer-final {
+  margin-top: 48px;
+  padding: 26px;
+  background: #172538;
+  border: 1px solid #294565;
+  border-left: 3px solid #60a5fa;
   border-radius: 10px;
-  background: var(--surface-color);
-  line-height: 1.75;
 }
 
-.disclaimer-notice strong {
-  color: var(--accent-color);
+.disclaimer-final h2 {
+  color: #f3f4f6;
+  font-size: clamp(1.35rem, 4vw, 1.8rem);
+  line-height: 1.35;
+  margin: 0 0 18px;
 }
 
-@media (max-width: 600px) {
+.disclaimer-final > p:not(.eyebrow) {
+  color: #cbd5e1;
+  font-size: 0.94rem;
+  line-height: 1.85;
+  margin: 0 0 16px;
+}
+
+.disclaimer-final > p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .disclaimer-page {
+    padding: 24px 18px 48px;
+  }
+
   .disclaimer-hero {
-    padding: 56px 0 44px;
+    padding: 34px 0 36px;
+    margin-bottom: 32px;
   }
 
   .disclaimer-section {
-    padding-top: 40px;
-    padding-bottom: 56px;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
   }
 
-  .disclaimer-block {
-    padding: 24px 0;
+  .disclaimer-final {
+    padding: 20px;
+    margin-top: 36px;
   }
 }
+
+
+
 
 
 
